@@ -11,6 +11,10 @@ def calculate(arg):
                 arg1 = stack.pop()
                 arg2 = stack.pop()
                 return arg1 + arg2
+            elif token is '^':
+                arg1 = stack.pop()
+                arg2 = stack.pop()
+                return arg1 ** arg2
 
 
 def main():
