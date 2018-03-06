@@ -2,3 +2,33 @@ I used Coveralls because it has virtually seamless integration with the public T
 
 Things I changed:
  - Changed script in .travis.yml to work with coveralls
+
+ OLD REPORT:
+ py.test --cov=rpn
+============================= test session starts ==============================
+platform linux2 -- Python 2.7.12, pytest-3.4.2, py-1.5.2, pluggy-0.6.0
+rootdir: /home/elise/c4cs/rpn, inifile:
+plugins: cov-2.5.1
+collected 2 items
+
+test_rpn.py ..                                                           [100%]
+
+---------- coverage: platform linux2, python 2.7.12-final-0 ----------
+Name     Stmts   Miss  Cover
+----------------------------
+rpn.py      20      3    85%
+
+NEW REPORT:
+py.test --cov=rpn
+============================= test session starts ==============================
+platform linux2 -- Python 2.7.12, pytest-3.4.2, py-1.5.2, pluggy-0.6.0
+rootdir: /home/elise/c4cs/rpn, inifile:
+plugins: cov-2.5.1
+collected 2 items
+
+test_rpn.py ..                                                           [100%]
+
+---------- coverage: platform linux2, python 2.7.12-final-0 ----------
+Name     Stmts   Miss  Cover
+----------------------------
+rpn.py      24      7    71%
