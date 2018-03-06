@@ -7,10 +7,11 @@ def calculate(arg):
             value = int(token)
             stack.append(value)
         except ValueError:
-            arg1 = stack.pop()
-            arg2 = stack.pop()
-            return arg1 + arg2
-    
+            if token is '+':
+                arg1 = stack.pop()
+                arg2 = stack.pop()
+                return arg1 + arg2
+
 
 def main():
     while True:
