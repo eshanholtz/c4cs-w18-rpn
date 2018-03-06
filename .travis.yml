@@ -3,8 +3,8 @@ python:
     - "3.5"
 # command to run tests
 before_script:
+    - pip install pytest pytest-cov
     - pip install coveralls
 script:
-    - python3 test_rpn.py test c4cs-rpn
-    - coverage run --source=c4cs-rpn test_rpn.py test c4cs-rpn
+    - py.test
 after_success: coveralls

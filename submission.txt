@@ -1,2 +1,4 @@
+I used Coveralls because it has virtually seamless integration with the public Travis CI API
+
 Things I changed:
  - Changed script in .travis.yml to work with coveralls
