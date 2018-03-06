@@ -1,0 +1,2 @@
+Things I changed:
+ - Changed script in .travis.yml to work with coveralls
