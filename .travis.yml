@@ -3,7 +3,6 @@ python:
     - "3.5"
 # command to run tests
 before_script:
-    - pip install -r travis/test_requirements.txt --use-mirrors
     - pip install coveralls
 script:
     - python3 test_rpn.py test c4cs-rpn
