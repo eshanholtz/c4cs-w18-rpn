@@ -1,5 +1,9 @@
 language: python
 python:
     - "3.5"
+install:
+    - pip install coveralls
 # command to run tests
-script: make test 
+script: coverage run --source c4cs-rpn setup.py test
+after_success:
+    coveralls
